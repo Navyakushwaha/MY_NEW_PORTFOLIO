@@ -1,0 +1,122 @@
+.cv_btn
+{
+    color: rgb(71, 70, 70) !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+.Btn_cv
+{
+    border: 1px solid black;
+}
+.style_A
+{
+    color:#52f074ff;
+}
+.info
+{
+    color:white;
+    background: rgb(77, 197, 77);
+    padding: 3px;
+    
+}
+.info1
+{
+    color:white;
+    background: rgb(85, 202, 85);
+    padding: 3px;   
+}
+.info_txt
+{
+    color: darkgrey;
+    padding-left: 220px;
+}
+.info_txt1
+{
+    color: darkgrey;
+    padding-left: 150px;
+}
+.info_txt2
+{
+    color: darkgrey;
+    padding-left: 80px;
+}
+.icon
+{
+    color:white;
+    margin-left:8px; 
+    padding-top: 10px;
+    font-size:40px;
+}
+
+.self_img
+{
+    height: 290px;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+/* RESUME */
+
+.timeline
+{
+    border:1px solid rgb(136, 207, 30);
+    padding: 5px;
+    color: rgb(149, 216, 16);
+}
+.timeline-txt
+{
+    font-size:13px;
+    color:gray;
+}
+
+.size
+{
+    height: 60px;
+    width: 60px;
+    margin-left: 100px;
+}
+
+/* PROJECT SECTION */
+.project_img
+{
+    height: 250px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border: 1px solid rgb(143, 140, 140);
+    border-radius: 5px;
+    /* box-shadow: 10px 10px 10px 0.6px #cec0c0; */
+     
+}
+.project_img:hover 
+{
+    transform: scale(1.0);
+    border: 1px solid rgb(143, 140, 140);
+    box-shadow: 6px 6px 6px 0.2px #c4c2c2;
+    border:none;
+    transition: 0.3s; 
+}
+.css-1ms7hib-MuiTimelineItem-root::before{
+    content: none !important;
+}
+
+.css-lfb3c7-MuiLinearProgress-bar2 
+{
+    background: rgb(84, 236, 64) !important;
+}
+.css-lcqqge-MuiLinearProgress-bar1
+{
+    background: rgb(123, 228, 109) !important;
+}
+.css-1txyin7-MuiLinearProgress-root
+{
+    background-color: rgb(159, 247, 188) !important;
+}
+.css-eorpq6-MuiCircularProgress-circle
+{
+   stroke: rgb(38 210 25) !important;
+}
+.icon_sty
+{
+    color:rgb(38 210 25);
+    margin-right: 5px;
+    
+}
