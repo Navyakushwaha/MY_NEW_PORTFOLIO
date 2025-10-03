@@ -1,3 +1,9 @@
+/* *
+{
+    background: #1a1818;
+    color: white;
+} */
+
 .cv_btn
 {
     color: rgb(71, 70, 70) !important;
@@ -108,7 +114,7 @@
 }
 .css-1txyin7-MuiLinearProgress-root
 {
-    background-color: rgb(159, 247, 188) !important;
+    background-color: rgb(224, 226, 224) !important;
 }
 .css-eorpq6-MuiCircularProgress-circle
 {

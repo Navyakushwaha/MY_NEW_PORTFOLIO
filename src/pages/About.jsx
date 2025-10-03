@@ -63,13 +63,13 @@ function About() {
         }
     }
 
-    function generatePDF() {
-        const doc = new jsPDF();
-        const imgData = "data:image/png;base64,..."; // your base64 image
+    // function generatePDF() {
+    //     const doc = new jsPDF();
+    //     const imgData = "data:image/png;base64,..."; // your base64 image
 
-        doc.addImage(imgData, "PNG", 10, 10, 50, 50);
-        doc.save("with-image.pdf"); // triggers download
-    }
+    //     doc.addImage(imgData, "PNG", 10, 10, 50, 50);
+    //     doc.save("with-image.pdf"); // triggers download
+    // }
 
     return (
         <>
@@ -153,7 +153,7 @@ function About() {
                             </Box>
                             <Box sx={{ bgcolor: "white", height: "25%", borderTop: 1, borderColor: "#8b8a8aff", display: "flex", borderRadius: "0px 0px 6px 6px" }}>
                                 <Button className="Btn_cv" sx={{ mx: "60px", px: "0px" }}>
-                                    <Link onClick={generatePDF()} className="cv_btn" to="/"><span sx={{ color: "black" }}>DOWNLOAD CV</span><GetAppIcon />
+                                    <Link  className="cv_btn" to="/"><span sx={{ color: "black" }}>DOWNLOAD CV</span><GetAppIcon />
                                     </Link>
                                 </Button>
                                 <Button><Link className="cv_btn" to="/">CONTACT ME <TelegramIcon /></Link></Button>

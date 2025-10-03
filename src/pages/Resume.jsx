@@ -42,7 +42,7 @@ function Resume() {
                 </Typography>
                 <Box sx={{ height: "600px", width: "100%", backgroundColor: "white", display: "flex", borderTop: 1, borderColor: "#c5bfbfff", pb: "20px" }}>
                     <Box sx={{ height: "100%", width: "50%", background: "#fff", }}>
-                        <Typography sx={{ textAlign: "center", borderBottom: 1, borderColor: "#f1e9e9ff", py: "15px", fontWeight: "bold" }}>
+                        <Typography sx={{ textAlign: "center",color:"#3f3e3eff", borderBottom: 1, borderColor: "#f1e9e9ff", py: "15px", fontWeight: "bold" }}>
                             EXPERIENCE
                         </Typography>
 
@@ -78,7 +78,7 @@ function Resume() {
                         </Timeline>
                     </Box>
                     <Box sx={{ height: "100%", width: "50%", background: "#fff", borderLeft: 1, borderColor: "#e9e4e4ff" }}>
-                        <Typography sx={{ textAlign: "center", borderBottom: 1, borderColor: "#f1e9e9ff", py: "15px", fontWeight: "bold" }}>
+                        <Typography sx={{color:"#3f3e3eff", textAlign: "center", borderBottom: 1, borderColor: "#f1e9e9ff", py: "15px", fontWeight: "bold" }}>
                             EDUCATION
                         </Typography>
 
@@ -142,10 +142,10 @@ function Resume() {
                 <Typography variant="h5" sx={{ fontWeight: "bold", mt: "0px", ml: "25px", color: "#413f3fff" }}>
                     <span className="style_A">S</span>kills
                 </Typography>
-                <Box sx={{ height: "300px", width: "90%", backgroundColor: "white", m: "30px", display: "flex", borderTop: 1, borderColor: "#c5bfbfff", pb: "20px" }}>
+                <Box sx={{ height: "230px", width: "90%", backgroundColor: "white", m: "30px", display: "flex", borderTop: 1, borderColor: "#f3f0f0ff", pb: "20px" }}>
 
-                    <Box sx={{ height: "100%", width: "50%", background: "white", borderRight: 1, borderColor: "#c5bfbfff" }}>
-                        <Typography sx={{ textAlign: "center", borderBottom: 1, borderColor: "#f1e9e9ff", mx: "20px", py: "15px", fontWeight: "bold" }}>
+                    <Box sx={{ height: "100%", width: "50%", background: "white", borderRight: 1, borderColor: "#f1f0f0ff" }}>
+                        <Typography sx={{ textAlign: "center", color:"#3f3e3eff",borderBottom: 1, borderColor: "#f1f0f0ff", mx: "20px", py: "15px", fontWeight: "bold" }}>
                             DESIGN
                         </Typography >
 
@@ -155,6 +155,7 @@ function Resume() {
                         <Stack spacing={2} sx={{ flex: 1, mt: "10px", mr: "20px", color: "green" }}>
                             <LinearProgress determinate value={progress} />
                         </Stack>
+                        
                         <Typography sx={{ mt: "10px", mr: "20px", color: "gray", fontSize: "17px" }}>
                             UI DESIGN
                         </Typography>
@@ -163,13 +164,13 @@ function Resume() {
                         </Stack>
                     </Box>
                     <Box sx={{ height: "100%", width: "50%", background: "white" }}>
-                        <Typography sx={{ textAlign: "center", borderBottom: 1, borderColor: "#f1e9e9ff", mx: "20px", py: "15px", fontWeight: "bold" }}>
+                        <Typography sx={{ textAlign: "center", color:"#3f3e3eff",borderBottom: 1, borderColor: "#f1f0f0ff", mx: "20px", py: "15px", fontWeight: "bold" }}>
                             LANGUAGES
                         </Typography>
 
                         <Box sx={{ width: "300px", m: 2 }}>
                             {languages.map((lang, index) => (
-                                <Box key={index} sx={{ mb: 2 }}>
+                                <Box key={index} sx={{ mb: 2, color:"#666666ff" }}>
                                     <Typography variant="body1" sx={{ fontWeight: 500, mb: 0.5 }}>
                                         {lang.name}
                                     </Typography>
@@ -190,26 +191,70 @@ function Resume() {
                     </Box>
                 </Box>
 
-                <Box sx={{ height: "200px", width: "100%", display: "flex" }}>
-                    <Box sx={{ height: "100%", width: "50%", background: "white", borderRight: 1, borderColor: "#c5bfbfff" }}>
-                        <Typography sx={{ textAlign: "center", borderBottom: 1, borderColor: "#f1e9e9ff", mx: "20px", py: "15px", fontWeight: "bold" }}>
+                <Box sx={{ height: "400px", width: "100%", display: "flex" }}>
+                    <Box sx={{ height: "100%", width: "50%", background: "white", borderRight: 1, borderColor: "#f1f0f0ff" }}>
+                        <Typography sx={{ textAlign: "center",color:"#3f3e3eff" ,borderBottom: 1, borderColor: "#f1f0f0ff", mx: "20px", py: "15px", fontWeight: "bold" }}>
                             CODING
                         </Typography>
-
-                        <Stack sx={{m:"25px"}} spacing={2} direction="row">
+                        <Box sx={{height:"50%",width:"100%",display:"flex"}}> 
+                            <Box sx={{height:"100%",width:"50%"}}>
+                                <Box sx={{height:"70%",width:"100%",p:"25px"}}>
+                                    <Box sx={{height:"100%",width:"100%",border:"4px solid #6fe66bff", borderRadius:"50% 50%"}}>
+                                    <h3 style={{textAlign:"center",marginTop:"30px",color:"#333232ff"}}>45%</h3>
+                                    </Box>
+                                </Box>
+                                <Box sx={{height:"30%",width:"100%"}}>
+                                    <span>HTML</span>
+                                </Box>
+                            </Box>
+                            <Box sx={{height:"100%",width:"50%"}}>
+                                <Box sx={{height:"70%",width:"100%",p:"25px"}}>
+                                    <Box sx={{height:"100%",width:"100%",border:"4px solid #6fe66bff", borderRadius:"50% 50%"}}>
+                                    <h3 style={{textAlign:"center",marginTop:"30px",color:"#333232ff"}}>45%</h3>
+                                    </Box>
+                                </Box>
+                                <Box sx={{height:"30%",width:"100%"}}>
+                                    <span>HTML</span>
+                                </Box>
+                            </Box>
+                              
+                        </Box>
+                        <Box sx={{height:"50%",width:"100%",display:"flex",p:"5px"}}>
+                             <Box sx={{height:"100%",width:"50%"}}>
+                                <Box sx={{height:"70%",width:"100%",p:"25px"}}>
+                                    <Box sx={{height:"100%",width:"100%",border:"4px solid #6fe66bff", borderRadius:"50% 50%"}}>
+                                    <h3 style={{textAlign:"center",marginTop:"30px",color:"#333232ff"}}>45%</h3>
+                                    </Box>
+                                </Box>
+                                <Box sx={{height:"30%",width:"100%"}}>
+                                    <span>HTML</span>
+                                </Box>
+                            </Box>
+                            <Box sx={{height:"100%",width:"50%"}}>
+                                <Box sx={{height:"70%",width:"100%",p:"25px"}}>
+                                    <Box sx={{height:"100%",width:"100%",border:"4px solid #6fe66bff", borderRadius:"50% 50%"}}>
+                                    <h3 style={{textAlign:"center",marginTop:"30px",color:"#333232ff"}}>45%</h3>
+                                    </Box>
+                                </Box>
+                                <Box sx={{height:"30%",width:"100%"}}>
+                                    <span style={{textAlign:"center"}}>HTML</span>
+                                </Box>
+                            </Box>
+                        </Box>
+                        {/* <Stack sx={{m:"25px"}} spacing={2} direction="row">
                             <CircularProgress variant="determinate" value={55}><h1>hii</h1></CircularProgress>
                             <CircularProgress variant="determinate" value={75} />
                             <CircularProgress variant="determinate" value={92} />
                             <CircularProgress variant="determinate" value={85} />
                             <CircularProgress variant="determinate" value={100} />  
-                        </Stack>
+                        </Stack> */}
                         
                     </Box>
                     <Box sx={{ height: "100%", width: "50%", background: "white"}}>
-                        <Typography sx={{ textAlign: "center", borderBottom: 1, borderColor: "#f1e9e9ff", mx: "20px", py: "15px", fontWeight: "bold" }}>
+                        <Typography sx={{ textAlign: "center",color:"#3f3e3eff", borderBottom: 1, borderColor: "#f1e9e9ff", mx: "20px", py: "15px", fontWeight: "bold" }}>
                             KNOWLEDGE
                         </Typography>
-                        <Box sx={{p:"20px"}}>
+                        <Box sx={{p:"20px",color:"#666666ff"}}>
                             <Typography><span className="icon_sty"><FaCheck/></span>Hypertext Markup Language</Typography>
                             <Typography><span  className="icon_sty"><FaCheck/></span>CaseCading Stylesheet</Typography>
                             <Typography><span className="icon_sty"><FaCheck/></span>Java Script</Typography>
