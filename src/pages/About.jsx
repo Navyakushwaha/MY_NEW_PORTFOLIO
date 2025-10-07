@@ -147,7 +147,7 @@ function About() {
       pdf.save("Navya_Kushwaha_Resume.pdf");
     } catch (error) {
       console.error("PDF generation failed:", error);
-      alert("Resume download mein problem aa gayi. Please try again.");
+      alert("Resume content not found. Please try again.");
     }
   };
 
