@@ -112,7 +112,7 @@ function RenderPage() {
                         <span className="style_A">A</span>bout Me
                     </Typography>
                     <Box sx={{ height: "100%", width: "100%", bgcolor: "white", my: "20px" }}>
-                        <Box container spacing={2}>
+                        <Box container spacing={2} >
                             {box.map((item) => (
                                 <Box key={item.id} sx={{
                                     height: "100%", width: "100%", bgcolor: "white", border: 1, borderColor: "#e0dcdcff", my: "10px", pb: "40px", transition: "0.5s",

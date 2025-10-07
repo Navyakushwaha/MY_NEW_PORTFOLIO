@@ -197,50 +197,51 @@ function Resume() {
                             CODING
                         </Typography>
                         <Box sx={{height:"50%",width:"100%",display:"flex"}}> 
-                            <Box sx={{height:"100%",width:"50%"}}>
+                            <Box sx={{height:"100%",width:"50%", pl:"10px"}}>
                                 <Box sx={{height:"70%",width:"100%",p:"25px"}}>
-                                    <Box sx={{height:"100%",width:"100%",border:"4px solid #6fe66bff", borderRadius:"50% 50%"}}>
+                                    <Box sx={{height:"100%",width:"100%",border:"4px solid #54c250ff", borderRadius:"50% 50%"}}>
                                     <h3 style={{textAlign:"center",marginTop:"30px",color:"#333232ff"}}>45%</h3>
                                     </Box>
                                 </Box>
                                 <Box sx={{height:"30%",width:"100%"}}>
-                                    <span>HTML</span>
+                                    <span className="tech">HTML/CSS/JS</span>
                                 </Box>
                             </Box>
-                            <Box sx={{height:"100%",width:"50%"}}>
+                            <Box sx={{height:"100%",width:"50%",pl:"10px"}}>
                                 <Box sx={{height:"70%",width:"100%",p:"25px"}}>
-                                    <Box sx={{height:"100%",width:"100%",border:"4px solid #6fe66bff", borderRadius:"50% 50%"}}>
+                                    <Box sx={{height:"100%",width:"100%",border:"4px solid #54c250ff", borderRadius:"50% 50%"}}>
                                     <h3 style={{textAlign:"center",marginTop:"30px",color:"#333232ff"}}>45%</h3>
                                     </Box>
                                 </Box>
                                 <Box sx={{height:"30%",width:"100%"}}>
-                                    <span>HTML</span>
+                                    <span className="tech">Mysql/MongoDB</span>
                                 </Box>
                             </Box>
                               
                         </Box>
-                        <Box sx={{height:"50%",width:"100%",display:"flex",p:"5px"}}>
+                        <Box sx={{height:"50%",width:"100%",display:"flex",pl:"10px"}}>
                              <Box sx={{height:"100%",width:"50%"}}>
                                 <Box sx={{height:"70%",width:"100%",p:"25px"}}>
-                                    <Box sx={{height:"100%",width:"100%",border:"4px solid #6fe66bff", borderRadius:"50% 50%"}}>
+                                    <Box sx={{height:"100%",width:"100%",border:"4px solid #54c250ff", borderRadius:"50% 50%"}}>
                                     <h3 style={{textAlign:"center",marginTop:"30px",color:"#333232ff"}}>45%</h3>
                                     </Box>
                                 </Box>
                                 <Box sx={{height:"30%",width:"100%"}}>
-                                    <span>HTML</span>
+                                    <span className="tech">MERN STACK</span>
                                 </Box>
                             </Box>
                             <Box sx={{height:"100%",width:"50%"}}>
                                 <Box sx={{height:"70%",width:"100%",p:"25px"}}>
-                                    <Box sx={{height:"100%",width:"100%",border:"4px solid #6fe66bff", borderRadius:"50% 50%"}}>
+                                    <Box sx={{height:"100%",width:"100%",border:"4px solid #54c250ff", borderRadius:"50% 50%"}}>
                                     <h3 style={{textAlign:"center",marginTop:"30px",color:"#333232ff"}}>45%</h3>
                                     </Box>
                                 </Box>
                                 <Box sx={{height:"30%",width:"100%"}}>
-                                    <span style={{textAlign:"center"}}>HTML</span>
+                                    <span className="tech">Talwind/MUI</span>
                                 </Box>
                             </Box>
                         </Box>
+                        
                         {/* <Stack sx={{m:"25px"}} spacing={2} direction="row">
                             <CircularProgress variant="determinate" value={55}><h1>hii</h1></CircularProgress>
                             <CircularProgress variant="determinate" value={75} />

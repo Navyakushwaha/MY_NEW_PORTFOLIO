@@ -4,6 +4,9 @@
     color: white;
 } */
 
+body{
+   background: linear-gradient(to bottom right, #50a3a2 0%, #78cc6d 100%) !important;
+}
 .cv_btn
 {
     color: rgb(71, 70, 70) !important;
@@ -56,9 +59,16 @@
 
 .self_img
 {
-    height: 290px;
-    width: 100%;
+    
+   padding-top: 10px;
+    
+}
+.my_img
+{
+    border-radius: 50%;
     background-repeat: no-repeat;
+    background-image: url("/public/my_pic.png");
+    background-size: 100% 100% ;
 }
 /* RESUME */
 
@@ -89,16 +99,18 @@
     margin-top: 20px;
     border: 1px solid rgb(143, 140, 140);
     border-radius: 5px;
+      transition: transform 0.3s ease-in-out;
     /* box-shadow: 10px 10px 10px 0.6px #cec0c0; */
      
 }
 .project_img:hover 
 {
-    transform: scale(1.0);
+    transform: scale( 1.1);
     border: 1px solid rgb(143, 140, 140);
     box-shadow: 6px 6px 6px 0.2px #c4c2c2;
     border:none;
     transition: 0.3s; 
+    
 }
 .css-1ms7hib-MuiTimelineItem-root::before{
     content: none !important;
@@ -126,3 +138,11 @@
     margin-right: 5px;
     
 }
+.tech
+{
+    margin-left: 46px;
+    font-size: 15px;
+    color: #424141;
+    font-weight: 700;
+}
+
