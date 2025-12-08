@@ -8,6 +8,7 @@ import Resume from './pages/Resume'
 import Project from './pages/Projects'
 import Contact from './pages/Contact'
 import About from './pages/About'
+import Works from "./Work/Works.jsx"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
          <Route path="/resume" element={<Resume/>}/>
          <Route path="/project" element={<Project/>}/>
          <Route path="/contact" element={<Contact/>}/>
+         <Route path="/work" element={<Works/>}/>
       </Routes>
     </BrowserRouter>
       

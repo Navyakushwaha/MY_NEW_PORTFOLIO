@@ -25,14 +25,13 @@ body{
 {
     color:white;
     background: rgb(77, 197, 77);
-    padding: 3px;
-    
+    padding: 3px;   
 }
 .info1
 {
     color:white;
     background: rgb(85, 202, 85);
-    padding: 3px;   
+    padding-left: 3px;   
 }
 .info_txt
 {
@@ -42,12 +41,12 @@ body{
 .info_txt1
 {
     color: darkgrey;
-    padding-left: 150px;
+    padding-left: 190px;
 }
 .info_txt2
 {
     color: darkgrey;
-    padding-left: 80px;
+    padding-left: 120px;
 }
 .icon
 {
@@ -67,7 +66,7 @@ body{
 {
     border-radius: 50%;
     background-repeat: no-repeat;
-    background-image: url("/public/my_pic.png");
+    /* background-image: url("/public/my_pic.png"); */
     background-size: 100% 100% ;
 }
 /* RESUME */
@@ -145,4 +144,20 @@ body{
     color: #424141;
     font-weight: 700;
 }
+.css-1rgjzwx
+{
+    box-shadow:5px 4px 10px rgba(200, 52, 17, 0.2) !important;
+}
+.contact_icon
+{
+    padding: 5px;
+    color: rgb(49, 46, 46);
+}
+.contact_icon1
+{
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* RESPONSIVE DESIGN */
 

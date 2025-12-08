@@ -8,11 +8,12 @@ import { TbBrandNetflix } from "react-icons/tb";
 import { jsPDF } from "jspdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import LightModeIcon from '@mui/icons-material/LightMode';
+
 import React, { useEffect } from "react";
 import Typewriter from "typewriter-effect";
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
-import BedtimeOutlinedIcon from '@mui/icons-material/BedtimeOutlined';
+import BedtimeIcon from '@mui/icons-material/Bedtime';
+import LightModeIcon from '@mui/icons-material/LightMode';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import FeedOutlinedIcon from '@mui/icons-material/FeedOutlined';
@@ -31,6 +32,7 @@ import { FaDribbble } from "react-icons/fa";
 import Contact from "./Contact";
 import Resume from "./Resume";
 import Project from "./Projects";
+import Works from "../Work/Works.jsx"
 import RenderPage from "../layouts/RenderPage";
 import { ImTextColor } from "react-icons/im";
 import '../index.css'
@@ -76,6 +78,8 @@ function About() {
                 return <Project />;
             case "contact":
                 return <Contact />;
+            case "work":
+                return <Works />;
             default:
                 return <RenderPage />;
         }
@@ -91,6 +95,8 @@ function About() {
     //     doc.addImage(imgData, "PNG", 10, 10, 50, 50);
     //     doc.save("with-image.pdf"); // triggers download
     // }
+
+
     // const ey=document.getElementById("eye");
     //  ey.addEventListener("click",function(){
 
@@ -101,12 +107,12 @@ function About() {
         <>
             <Box sx={{ height: "630px", display: "flex", gap: "4" }}>
                 {/* static Box */}
-                <Box sx={{ bgcolor: "#a0ebb4ff)", height: "520px", width: "1000px", ml: "40px", my: "40px", display: "flex", flexDirection: { xs: "column", md: "row" }, }}>
+                <Box sx={{ bgcolor: "#a0ebb4ff)", height: "520px", width: "1000px", ml: "40px", my: "40px", display: "flex" }}>
                     {/* NAVBAR */}
-                    <Box className="navbar" sx={{  height: "97%", width: "15%", mt: "50px", mr: "3px", borderRadius: "5px", textAlign: "center", }}>
+                    <Box className="navbar" sx={{ height: "97%", width: "15%", mt: "50px", mr: "3px", borderRadius: "5px", textAlign: "center", }}>
                         <Box sx={{ bgcolor: "white", height: "30%", mb: "10px", borderRadius: "5px" }}>
                             <Box sx={{ pt: "20px" }}><MenuOutlinedIcon /></Box>
-                            <Box onClick={change} sx={{ pt: "20px" }}>{state == "light-mode" ? <LightModeIcon /> : <BedtimeOutlinedIcon />}</Box>
+                            <Box id="eye" sx={{ pt: "20px" }}>{state == "light-mode" ? <LightModeIcon /> : <BedtimeIcon />}</Box>
                             <Box sx={{ pt: "20px" }}><ShoppingCartIcon /></Box>
                         </Box>
                         <Box sx={{ bgcolor: "white", height: "70%", borderRadius: "5px", px: "4px", textAlign: "center" }}>
@@ -125,7 +131,7 @@ function About() {
                             <Box>
                                 <Typography sx={{ borderBottom: 1, borderColor: "#c4bcbcff", fontSize: "5px", pt: "5px", color: "#444343ff" }}>
                                     < VisibilityIcon />
-                                    <Button sx={{ color: "#444343ff", fontWeight: "bolder" }}>WORKS</Button>
+                                    <Button sx={{ color: "#444343ff", fontWeight: "bolder" }} onClick={() => setPage("work")}>WORKS</Button>
                                 </Typography>
                             </Box>
                             <Box>
@@ -180,10 +186,10 @@ function About() {
                             </Box>
                             <Box sx={{ bgcolor: "white", height: "25%", borderTop: 1, borderColor: "#8b8a8aff", display: "flex", borderRadius: "0px 0px 6px 6px" }}>
                                 <Button className="Btn_cv" sx={{ mx: "60px", px: "0px" }}>
-                                    <Link className="cv_btn" to="/"><span sx={{ color: "black" }}>DOWNLOAD CV</span><GetAppIcon />
+                                    <Link className="cv_btn" to="/"><span sx={{ color: "black" }} >DOWNLOAD CV</span><span className="contact_icon1"><GetAppIcon /></span>
                                     </Link>
                                 </Button>
-                                <Button><Link className="cv_btn" to="/">CONTACT ME <TelegramIcon /></Link></Button>
+                                <Button><Link className="cv_btn" to="/Contact">CONTACT ME </Link><span className="contact_icon"><TelegramIcon /></span></Button>
                             </Box>
                         </Box>
                     </Box>

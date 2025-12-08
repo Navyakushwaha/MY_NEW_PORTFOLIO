@@ -144,7 +144,7 @@ function RenderPage() {
                     <Grid container spacing={2}>
                         {tech.map((item) => (
                             <Grid item xs={12} sm={6} md={4} key={item.id} sx={{
-                                height: "100%", width: "250px", bgcolor: "white",borderRadius:"10px", py: "25px", my: "20px", mx: "10px", border: 1, borderColor: "#c2bcbcff", transition: "0.3s",
+                                height: "100%", width: "250px", bgcolor: "white", borderRadius: "10px", py: "25px", my: "20px", mx: "10px", border: 1, borderColor: "#c2bcbcff", transition: "0.3s",
                                 "&:hover": {
                                     boxShadow: 6,
                                     transform: "scale(1.05)",
@@ -162,7 +162,7 @@ function RenderPage() {
                     </Grid>
                 </Box>
 
-                
+
             </Box>
         </>
     )
