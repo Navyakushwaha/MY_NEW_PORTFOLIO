@@ -36,7 +36,7 @@ function Resume() {
 
     return (
         <>
-            <Box sx={{ height: "100%", width: "100%", background: "#fff" }}>
+            <Box data-resume-content sx={{ width: "100%", background: "#fff" }}>
                 <Typography variant="h5" sx={{ fontWeight: "bold", mt: "15px", color: "#413f3fff" }}>
                     <span className="style_A">R</span>esume
                 </Typography>
